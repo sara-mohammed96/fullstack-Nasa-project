@@ -1,4 +1,4 @@
-{
+{ "homepage": "https://sara-mohammed96.github.io/fullstack-Nasa-project",
   "name": "nasa-fe",
   "version": "1.0.1",
   "private": true,
@@ -11,6 +11,8 @@
   },
   "scripts": {
     "start": "react-scripts start",
+    "predeploy":"npm run build",
+    "deploy": "gh-pages -d build",
     "build": "BUILD_PATH=../server/public react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
@@ -35,5 +37,8 @@
   },
   "overrides": {
     "nth-check@1.0.2": "2.0.1"
+  },
+  "devDependencies": {
+    "gh-pages": "^6.1.1"
   }
 }
